@@ -1,23 +1,6 @@
-logging:
-  level:
-    org:
-      elasticsearch:
-#        client: INFO
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/test
     username: postgres
     password: postgres
-  jpa:
-    hibernate:
-      ddl-auto: create
-    database: postgresql
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
-#  flyway:
-#    baseline-on-migrate: true
-#    enabled: true
-#    baseline-description: "init"
-#    baseline-version: 0
-server:
-  port: 8081
